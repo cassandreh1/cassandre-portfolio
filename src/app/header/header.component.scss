@@ -2,10 +2,10 @@
     height: 500px;
     text-align: center;
     background-color: black;
-    @font-face {
-        font-family: Clip;
-        src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-      }
+    // @font-face {
+    //     font-family: Clip;
+    //     src: url("https://acupoftee.github.io/fonts/Clip.ttf") format("truetype");
+    //   }
       .title-section {
         h3 {
             color: white;
@@ -13,7 +13,7 @@
         }
         position: relative;
         top: 40%;
-        font-family: "Clip";
+        font-family: "Courier New";
         text-transform: uppercase;
         font-size: 4em;
         color: #ffe6ff;
