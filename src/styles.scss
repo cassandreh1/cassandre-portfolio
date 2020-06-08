@@ -1,5 +1,8 @@
 // @import "../node_modules/bootstrap/scss/bootstrap.scss"; 
 /* You can add global styles to this file, and also import other style files */
+body {
+    overflow-y: hidden;
+}
 .container {
     padding-top: 20px;
     padding-bottom: 20px;

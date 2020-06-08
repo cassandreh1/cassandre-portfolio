@@ -1,15 +1,49 @@
 .content-stye {
-    background-color: #f2f2f2;
     color: slategray;
-    padding: 15px 0;
-    .content-text {
-        border-left: 2px red solid;
-    
+    padding: 0;
+    .content-container {
+        font-family: "Courier New";
+        padding: 30px 30px;
+        background-color: #f2f2f2;
+        animation: slideLeft 2s ease-in-out forwards;
+        
+    }
+    #photo-container {
+        padding: 30px 10px;
+        text-align: center;
+        img {
+            margin-top: 10px;
+            height: 32em;
+            width: 26em;
+            box-shadow: -2px 2px 20px 5px #22c0e8;
+        }
+        animation: slideRight 2s ease-in-out forwards;
+    }
+    hr {
+        border-color: #22c0e8;
+        margin-bottom: 2rem;
     }
 }
-.title
-{
-    font-family: FreeMono,sans-serif;
-    text-align: center;
-    margin-top: 15%;
-}
+
+@keyframes slideRight{
+    0% {
+      transform: translateX(-500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+// .title {
+//     font-family: FreeMono,sans-serif;
+//     text-align: center;
+//     margin-top: 15%;
+// }
