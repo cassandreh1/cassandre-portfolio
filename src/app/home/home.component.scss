@@ -2,10 +2,13 @@
     color: slategray;
     padding: 0;
     .content-container {
-        font-family: "Courier New";
+        // font-family: "";
         padding: 30px 30px;
         background-color: #f2f2f2;
         animation: slideLeft 2s ease-in-out forwards;
+        #signature {
+            font-family: cursive;
+        }
         
     }
     #photo-container {
@@ -27,18 +30,18 @@
 
 @keyframes slideRight{
     0% {
-      transform: translateX(-500px) scale(.2);
+      transform: translateX(-30px);
     }
     100% {
-      transform: translateX(0px) scale(1);
+      transform: translateX(0px);
     }
   }
   @keyframes slideLeft {
     0% {
-      transform: translateX(500px) scale(.2);
+      transform: translateX(10px);
     }
     100% {
-      transform: translateX(0px) scale(1);
+      transform: translateX(0px);
     }
   }
 
