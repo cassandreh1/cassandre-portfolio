@@ -5,7 +5,7 @@
         // font-family: "";
         padding: 30px 30px;
         background-color: #f2f2f2;
-        // animation: slideLeft 2s ease-in-out forwards;
+        animation: slideLeft 2s ease-in-out forwards;
         #signature {
             font-family: cursive;
         }
@@ -16,11 +16,11 @@
         text-align: center;
         img {
             margin-top: 10px;
-            height: 32em;
-            width: 26em;
+            height: 29em;
+            width: 23em;
             box-shadow: -2px 2px 20px 5px #22c0e8;
         }
-        // animation: slideRight 2s ease-in-out forwards;
+        animation: slideRight 2s ease-in-out forwards;
     }
     hr {
         border-color: #22c0e8;
@@ -44,9 +44,3 @@
       transform: translateX(0px);
     }
   }
-
-// .title {
-//     font-family: FreeMono,sans-serif;
-//     text-align: center;
-//     margin-top: 15%;
-// }
