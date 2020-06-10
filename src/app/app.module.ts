@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 const appRoutes: Routes = [
   {path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     ResumeComponent,
     HomeComponent,
-    TechnicalSkillsComponent
+    TechnicalSkillsComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,

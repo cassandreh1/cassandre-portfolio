@@ -1,0 +1,28 @@
+<div class="row no-gutters justify-content-end" id="contact-me-wrapper">
+    <div class="col-sm-12">
+        <h3 class="sub-title">Contact Me</h3>
+        <hr>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <form #contactMe="ngForm">
+            <div class="form-group">
+                <label for="firstName">First name</label>
+                <input [(ngModel)]="model.firstName" name="firstName" type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input [(ngModel)]="model.lastName" name="lastName" type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input [(ngModel)]="model.email" name="email" type="text" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <input [(ngModel)]="model.message" name="message" type="text" class="form-control" id="message" required>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    <div></div>
+  </div>
