@@ -4,16 +4,20 @@
     .content-container {
         // font-family: "";
         padding: 30px 30px;
-        background-color: #f6fbfb;
-        animation: slideLeft 2s ease-in-out forwards;
+        // animation: slideLeft 2s ease-in-out forwards;
         #signature {
             font-family: cursive;
             font-size: 20px;
         }
-        
+        @media screen and (max-width: 767px) {
+          #signature {
+              font-size: 25px;
+          }
+       }  
     }
     #photo-container {
         padding: 30px 10px;
+        background-color: #f6fbfb;
         text-align: center;
         img {
             margin-top: 10px;
@@ -21,27 +25,33 @@
             width: 23em;
             box-shadow: -2px 2px 20px 5px #22c0e8;
         }
-        animation: slideRight 2s ease-in-out forwards;
+        // animation: slideRight 2s ease-in-out forwards;
     }
     hr {
         border-color: #22c0e8;
         margin-bottom: 2rem;
+        animation: slideLeft 2s ease-in-out forwards;
+
     }
 }
 
-@keyframes slideRight{
-    0% {
-      transform: translateX(-30px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  }
+// @keyframes slideRight{
+//     0% {
+//       transform: translateX(-30px);
+//     }
+//     100% {
+//       transform: translateX(0px);
+//     }
+//   }
   @keyframes slideLeft {
     0% {
-      transform: translateX(10px);
+      width: 0%;
+    }
+    50% {
+      width: 50%;
     }
     100% {
-      transform: translateX(0px);
+      width: 100%
     }
   }
+ 
