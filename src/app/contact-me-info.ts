@@ -5,5 +5,11 @@ export class ContactMeInfo {
         public email: string,
         public message: string,
     ) {}
+    reset() {
+        this.firstName = '';
+        this.lastName = '';
+        this.email = '';
+        this.message = '';
+    }
 }
 

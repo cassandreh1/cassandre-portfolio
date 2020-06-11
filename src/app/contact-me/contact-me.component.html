@@ -3,26 +3,59 @@
         <h3 class="sub-title">Contact Me</h3>
         <hr>
     </div>
+    <div class="col-sm-12 col-md-6 wall-art">
+        <img src="../../assets/pngwave.png" alt="email logo">
+    </div>
     <div class="col-sm-12 col-md-6">
-        <form #contactMe="ngForm">
+        <form (ngSubmit)="onSubmit(contactMe)" #contactMe="ngForm">
             <div class="form-group">
-                <label for="firstName">First name</label>
-                <input [(ngModel)]="model.firstName" name="firstName" type="text" class="form-control" id="firstName" required>
+                <input #firstName="ngModel" [(ngModel)]="model.firstName" name="firstName" type="text"
+                    class="form-control" id="firstName" placeholder="First name" required>
+                <div class="error-message" [hidden]="firstName.pristine || firstName.valid">
+                    <svg class="bi bi-exclamation-triangle-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                    <p>First name is required</p>
+                </div>
             </div>
             <div class="form-group">
-                <label for="lastName">Last name</label>
-                <input [(ngModel)]="model.lastName" name="lastName" type="text" class="form-control" id="lastName" required>
+                <input #lastName="ngModel" [(ngModel)]="model.lastName" name="lastName" type="text" class="form-control"
+                    id="lastName" placeholder="Last name" required>
+                <div class="error-message" [hidden]="lastName.pristine || lastName.valid">
+                    <svg class="bi bi-exclamation-triangle-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                    <p>Last name is required</p>
+                </div>
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input [(ngModel)]="model.email" name="email" type="text" class="form-control" id="email" required>
+                <input #email="ngModel" [(ngModel)]="model.email" name="email" type="text" class="form-control"
+                    id="email" placeholder="Enter email" required>
+                <div class="error-message" [hidden]="email.pristine || email.valid">
+                    <svg class="bi bi-exclamation-triangle-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                    <p> Your email is required</p>
+                </div>
             </div>
             <div class="form-group">
-                <label for="message">Message</label>
-                <input [(ngModel)]="model.message" name="message" type="text" class="form-control" id="message" required>
+                <textarea #message="ngModel" [(ngModel)]="model.message" name="message" type="text" class="form-control"
+                    id="message" placeholder="Enter your message" maxlength="160" required></textarea>
+                    <div class="error-message" [hidden]="message.pristine || message.valid">
+                        <svg class="bi bi-exclamation-triangle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                        </svg>
+                        <p>Your message is required</p>
+                    </div>
+                    <!-- <p>{{message.value.length}}</p> -->
             </div>
-            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="submit" class="btn btn-success btn-block">Submit</button>
         </form>
     </div>
-    <div></div>
   </div>
