@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav #stickyMenu class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" routerLink="/home">Cassandre Henriquez</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,10 +7,27 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/home" routerLinkActive="active" >Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" 
+          routerLink="/home" 
+          routerLinkActive="active">
+          <!-- id="navbarDropdown" 
+          role="button" 
+          data-toggle="dropdown" 
+          aria-haspopup="true" 
+          aria-expanded="false" > -->
+            Home 
+            <span class="sr-only">(current)</span>
+        </a>
+        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a (click)="onMenuClick()"class="dropdown-item" href="#about-me-wrapper">About me</a>
+          <a (click)="onMenuClick()"class="dropdown-item" href="#contact-me-wrapper">Contact me</a>
+        </div> -->
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/resume" routerLinkActive="active"> Resume</a>
+        <a class="nav-link" routerLink="/resume" routerLinkActive="active" (click)="onMenuClick()" > Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/portfolio" routerLinkActive="active" (click)="onMenuClick()" > Portfolio</a>
       </li>
       <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

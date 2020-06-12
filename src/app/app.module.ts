@@ -10,11 +10,13 @@ import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const appRoutes: Routes = [
   {path:'', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'resume', component: ResumeComponent}
+  {path: 'resume', component: ResumeComponent},
+  {path: 'portfolio', component: PortfolioComponent},
 ];
 
 @NgModule({
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     ResumeComponent,
     HomeComponent,
     TechnicalSkillsComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
