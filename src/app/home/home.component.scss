@@ -2,7 +2,8 @@
     color: slategray;
     padding: 0;
     .content-container {
-        // font-family: "";
+        // font-family: ""
+        background-color: #f6fbfb;;
         padding: 30px 30px;
         // animation: slideLeft 2s ease-in-out forwards;
         #signature {
@@ -17,13 +18,13 @@
     }
     #photo-container {
         padding: 30px 10px;
-        background-color: #f6fbfb;
+        background-color: #ecf1f1;
         text-align: center;
         img {
             margin-top: 10px;
             height: 29em;
             width: 23em;
-            box-shadow: -2px 2px 20px 5px #22c0e8;
+            box-shadow: -2px 2px 20px 5px #f9a8d6;
         }
         // animation: slideRight 2s ease-in-out forwards;
     }
