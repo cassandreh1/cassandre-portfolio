@@ -15,15 +15,15 @@ export class ContactMeComponent implements OnInit {
   model = new ContactMeInfo('', '', '', '');
   submitted = false;
 
-  // onSubmit(form: NgModel) { 
-  //   console.log(this.model);
-  //   if (!form.valid){
-  //     // TODO: trigger From Control errors, will need to use Reactive forms
-  //     return false;
-  //   }
-  //   // TODO: rest call to Nodemailer module
-  //   this.submitted = true;
-  //   this.model.reset();
-  //   form.reset();
-  // }
+  onSubmit(form: NgModel) { 
+    // console.log(this.model);
+    // if (!form.valid){
+    //   // TODO: trigger From Control errors, will need to use Reactive forms
+    //   return false;
+    // }
+    // // TODO: rest call to Nodemailer module
+    // this.submitted = true;
+    // this.model.reset();
+    // form.reset();
+  }
 }
