@@ -1,12 +1,24 @@
 .row { 
-    padding: 20px 10.5%;
+    padding: 20px 5.5%;
 }
-.content-style {
-    background-color: #f2f2f2;
-    padding: 15px 0
+.sub-title {
+    color: #22c0e8;
+    line-height: 2;
+}
+hr {
+    border-color: #22c0e8;
+}
+#resume-pdf {
+    h5 {
+        display: inline-block;
+    }
+    a {
+        float: right;
+    }
 }
 #eduction-styling {
-    background-color: #ecf1f1;
+    background-image: linear-gradient(to bottom, white, #e6f3f3);
+    // background-color: #f2f2f2;
     .bi-book-half {
         padding-top: 0;
     }
@@ -19,6 +31,10 @@
         margin-bottom: 5px;
         
     }
+}
+#work-history {
+    background-color: #e6f3f3;
+    // background-image: linear-gradient(to bottom, white, #e6f3f3);
 }
 ul.timeline {
     list-style-type: circle;

@@ -1,6 +1,13 @@
 .row {
-    background-color: #ecf1f1;
-    padding: 20px 10.5%;
+    // background-color: #d4e4e4;
+    background-image: linear-gradient(to bottom, #e6f3f3, #b3d8d8);
+    padding: 20px 5.5%;
+}
+.sub-title {
+    color: #22c0e8;
+}
+hr {
+    border-color: #22c0e8;
 }
 #table-content {
     padding: 0px 15px;
