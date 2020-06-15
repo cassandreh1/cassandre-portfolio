@@ -9,6 +9,7 @@
         h3 {
             color: white;
             text-shadow: none;
+            margin-bottom: 40px;
         }
         position: relative;
         top: 35%;
@@ -27,6 +28,21 @@
       
       .fast-flicker {
         animation: shine-color 2s forwards, shine 2s forwards,  blink-color 10s 1s infinite, blink 10s 1s infinite;
+      }
+      .bi-chevron-double-down {
+        height: 3rem;
+        width: 3rem;
+        color: #ff65bd;
+        -webkit-animation: mover 1s infinite  alternate;
+        animation: mover 1s infinite  alternate;
+      }
+      @-webkit-keyframes mover {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-10px); }
+      }
+      @keyframes mover {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-10px); }
       }
       @keyframes blink-color {
         0%,
@@ -199,5 +215,12 @@
           opacity: 1;
         }
       }
-      
-}
+    }
+    @media screen and (max-width: 767px) {
+      .hero-section {
+        height: 475px;
+        .title-section {
+          top: 25%;
+        }
+      }
+    }

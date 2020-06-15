@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { faHome, faFile, faGripHorizontal, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,10 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  faHome = faHome;
+  faFile = faFile;
+  faAngleDown = faAngleDown;
+  faGripHorizontal = faGripHorizontal;
   @ViewChild('stickyMenu')  menuElement: ElementRef;
   menuPosition:any;
   ngOnInit() {

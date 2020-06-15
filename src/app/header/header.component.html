@@ -15,6 +15,7 @@
           data-toggle="dropdown" 
           aria-haspopup="true" 
           aria-expanded="false" > -->
+            <fa-icon [icon]="faHome"></fa-icon>
             Home 
             <span class="sr-only">(current)</span>
         </a>
@@ -24,28 +25,25 @@
         </div> -->
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/resume" routerLinkActive="active" (click)="onMenuClick()" > Resume</a>
+        <a class="nav-link" routerLink="/resume" routerLinkActive="active" (click)="onMenuClick()" > 
+          <fa-icon [icon]="faFile"></fa-icon>
+          Resume</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/portfolio" routerLinkActive="active" (click)="onMenuClick()" > Portfolio</a>
+        <a class="nav-link" routerLink="/portfolio" routerLinkActive="active" (click)="onMenuClick()" > 
+          <fa-icon [icon]="faGripHorizontal"></fa-icon>
+          Portfolio</a>
       </li>
-      <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Life style
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="javascript:void(0)">Living my Best Life</a>
-          <a class="dropdown-item" href="javascript:void(0)">Hair</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="javascript:void(0)">Heritage</a>
-        </div>
-      </li> -->
     </ul>
   </div>
 </nav>
 <div class="hero-section">
   <div class="title-section">
-    <h3>Hi there, I'm</h3>
     <span class="fast-flicker">C</span><span>ASSANDRE HENR</span><span class="flicker">I</span><span>QUEZ</span> 
+    <h3>Software Engineer</h3>
+    <svg class="bi bi-chevron-double-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg>
   </div>
 </div>
