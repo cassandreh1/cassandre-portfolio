@@ -1,7 +1,14 @@
-<header class="header-style">
+<div>
+  <header class="header-style">
     <app-header></app-header>
 </header>
-<router-outlet></router-outlet>
+<div class="loading-spinner" *ngIf="loading">
+  <fa-icon [icon]="faCircleNotch"></fa-icon>
+</div> 
+<div id="main-content"[@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet">
+  </router-outlet>
+</div>
 <footer>
   <div class="row no-gutters">
     <div class="col-sm-12">
@@ -9,3 +16,6 @@
     </div>
   </div>
 </footer>
+</div>
+
+

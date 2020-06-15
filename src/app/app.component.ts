@@ -1,10 +1,59 @@
 import { Component } from '@angular/core';
+import { faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import {
+  trigger, animateChild, group,
+  transition, animate, style, query, keyframes
+} from '@angular/animations';
+import { RouterOutlet, Router, RouterEvent, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('routeAnimation', [
+      transition('* => *', [
+        animate('1s ease-in', keyframes([
+          style({ opacity: 0 }),
+          style({ opacity: 1 })
+        ]))
+      ])
+    ])
+  ]
 })
 export class AppComponent {
+  faCircleNotch = faCircleNotch;
+  faSpinner = faSpinner;
+   // Sets initial value to true to show loading spinner on first load
+   loading = true
 
+   constructor(private router: Router) {
+     this.router.events.subscribe((e : RouterEvent) => {
+        this.navigationInterceptor(e);
+      })
+   }
+  ngOnInit() {
+    console.log(faCircleNotch);
+  }
+  // Shows and hides the loading spinner during RouterEvent changes
+  navigationInterceptor(event: RouterEvent): void {
+    if (event instanceof NavigationStart) {
+      this.loading = true
+    }
+    if (event instanceof NavigationEnd) {
+      this.loading = false
+    }
+
+    // Set loading state to false in both of the below events to hide the spinner in case a request fails
+    if (event instanceof NavigationCancel) {
+      this.loading = false
+    }
+    if (event instanceof NavigationError) {
+      this.loading = false
+    }
+  }
+  getAnimationData(outlet: RouterOutlet) {
+    console.log(outlet && outlet.activatedRouteData);
+    return outlet && outlet.activatedRouteData;
+  }
 }

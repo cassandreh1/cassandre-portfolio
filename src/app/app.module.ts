@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -33,7 +35,9 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     // HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

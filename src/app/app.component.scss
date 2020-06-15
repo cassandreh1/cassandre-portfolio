@@ -4,6 +4,23 @@
     text-align: center;
     margin-top: 15%;
 }
+#main-content {
+    min-height: 300px;
+}
+.loading-spinner{
+    position: absolute;
+    z-index: 2;
+    height: 33%;
+    width: 100%;
+    background-color: rgba(255,255,255, 0.8);
+    text-align: center;
+    padding-top: 115px;
+    color: #28a2c1;
+    svg {
+        height: 37px !important;
+        width: 50px !important;
+    }
+}
 footer div.col-sm-12 {
     height: 100px;
     padding: 20px;
