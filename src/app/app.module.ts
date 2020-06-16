@@ -34,7 +34,6 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    // HttpModule,
     RouterModule.forRoot(appRoutes),
     FontAwesomeModule,
     BrowserAnimationsModule
