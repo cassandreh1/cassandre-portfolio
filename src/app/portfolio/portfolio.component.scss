@@ -39,6 +39,7 @@ h3 {
         background-color: #28a2c1;;
         border-color: #28a2c1;
         margin-right: 15px;
+        margin-bottom: 15px;
         &:hover {
             color: #28a2c1;
             background-color: white;
@@ -49,9 +50,6 @@ h3 {
         .portfolio-item {
             margin-right: 0;
             margin-bottom: 50px;
-        }
-        .btn {
-            margin-bottom: 15px;
         }
     }
 }
