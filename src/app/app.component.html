@@ -5,7 +5,7 @@
 <div class="loading-spinner" *ngIf="loading">
   <fa-icon [icon]="faCircleNotch"></fa-icon>
 </div> 
-<div id="main-content"[@routeAnimation]="getAnimationData(routerOutlet)">
+<div class="container-fluid" id="main-content"[@routeAnimation]="getAnimationData(routerOutlet)">
   <router-outlet #routerOutlet="outlet">
   </router-outlet>
 </div>

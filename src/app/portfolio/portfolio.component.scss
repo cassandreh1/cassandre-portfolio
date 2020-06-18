@@ -1,11 +1,6 @@
-hr {
-    // border-color: #22c0e8;
-}
-h3 {
-    padding-top: 20px;
-}
 .portfolio-container {
     min-height: 350px;
+    background-image: linear-gradient(to bottom, white, #e6f3f3);
 }
 #portfolio-wrapper {
     margin: 0 !important;
@@ -46,7 +41,7 @@ h3 {
             border-color: #28a2c1;
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         .portfolio-item {
             margin-right: 0;
             margin-bottom: 50px;
