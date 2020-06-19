@@ -7,7 +7,7 @@
         <img src="../../assets/pngwave.png" alt="email logo">
     </div>
     <div class="col-sm-12 col-md-6">
-        <form method="post" (ngSubmit)="onSubmit()">
+        <form #contactMe="ngForm" method="post" (ngSubmit)="onSubmit(contactMe)">
             <input type="hidden" name="form-name" value="contact" /> 
             <!-- checks for spams -->
             <p style='display: none;'>

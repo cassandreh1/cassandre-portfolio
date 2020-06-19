@@ -6,10 +6,10 @@ export class ContactMeInfo {
         public message: string,
     ) {}
     reset() {
-        this.firstName = '';
-        this.lastName = '';
-        this.email = '';
-        this.message = '';
+        this.firstName = null;
+        this.lastName = null;
+        this.email = null;
+        this.message = null;
     }
 }
 
