@@ -4,53 +4,58 @@ import { NgModel } from '@angular/forms';
 import { HttpClient, HttpParams, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-// @Injectable()
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent implements OnInit {
+
+  model = new ContactMeInfo('', '', '', '');
+  showErrMsg: Boolean = false;
+  showSuccessMsg: Boolean = false;
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
-  model = new ContactMeInfo('', '', '', '');
-  submitted = false;
-
+  closeAlert(action) {
+    if (action === 'success') {
+      this.showSuccessMsg = false;
+    } else {
+      this.showErrMsg = false;
+    }
+  }
   onSubmit() { 
-    // console.log(this.model);
-    // if (!form.valid){
-    //   // TODO: trigger From Control errors, will need to use Reactive forms
-    //   return false;
-    // }
-    // // TODO: rest call to Nodemailer module
-    // this.submitted = true;
-    // this.model.reset();
-    // form.reset();
+    // TODO: trigger From Control errors, will need to use Reactive forms
+    if (!this.model.email || !this.model.firstName || !this.model.lastName || !this.model.message || !this.model.message){
+      alert("Please fill out the form");
+      return false;
+    }
       const body = new HttpParams()
       .set('form-name', 'contact')
-      .append('name', this.model.firstName)
-      .append('email', this.model.lastName)
-      .append('art', this.model.email)
+      .append('firstName', this.model.firstName)
+      .append('lastName', this.model.lastName)
+      .append('email', this.model.email)
       .append('message', this.model.message)
       this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }}).subscribe(
         res => {},
         err => {
           if (err instanceof ErrorEvent) {
             //client side error
-            alert("Something went wrong when sending your message.");
+            this.model.reset();
+            this.showErrMsg = true;
             console.log(err.error.message);
           } else {
             //backend error. If status is 200, then the message successfully sent
             if (err.status === 200) {
-              alert("Your message has been sent!");
+              this.model.reset();
+              this.showSuccessMsg = true;
             } else {
-              alert("Something went wrong when sending your message.");
-              console.log('Error status:');
-              console.log(err.status);
-              console.log('Error body:');
-              console.log(err.error);
+              this.model.reset();
+              this.showErrMsg = true;
+              console.log('Error status:', err.status);
+              console.log('Error body:', err.error);
             };
           };
         }

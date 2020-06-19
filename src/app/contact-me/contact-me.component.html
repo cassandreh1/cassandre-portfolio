@@ -8,7 +8,24 @@
     </div>
     <div class="col-sm-12 col-md-6">
         <form method="post" (ngSubmit)="onSubmit()">
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact" /> 
+            <!-- checks for spams -->
+            <p style='display: none;'>
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div *ngIf="showErrMsg" class="alert alert-danger alert-dismissible fade show" role="alert" >
+                Something went wrong when sending your message. <br> You can contact me at <u>cassandreh01@gmail.com</u> or Try again later.
+                <button type="button" class="close" (click)="closeAlert('fail')" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+            <div *ngIf="showSuccessMsg" class="alert alert-success alert-dismissible fade show" role="alert" >
+                Your message has been submitted!
+                <button type="button" class="close" (click)="closeAlert('success')" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="form-group">
                 <input #firstName="ngModel" [(ngModel)]="model.firstName" name="firstName" type="text"
                     class="form-control" id="firstName" placeholder="First name" required>
