@@ -60,7 +60,6 @@ export class AppComponent {
   }
   @HostListener('window:scroll', [])
   displayButton() {
-    console.log(document.documentElement.scrollTop);
     if ( document.documentElement.scrollTop > 400) {
       this.showButton = false;
     } else this.showButton = true;
