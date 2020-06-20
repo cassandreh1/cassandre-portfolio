@@ -1,26 +1,49 @@
 
 #skills-wrapper {
-    background-image: linear-gradient(to bottom, #e6f3f3, #b3d8d8);
+    // background-image: linear-gradient(to bottom, #e6f3f3, #b3d8d8);
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .sub-title {
-    color: #22c0e8;
+    // color: #22c0e8;
 }
 hr {
-    border-color: #22c0e8;
+    margin-bottom: 40px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
 }
 #table-content {
     padding: 0px 15px;
     width: 100%;
     .col-sm-12 {
-        border: 1px solid gray;
+        text-align: center;
+        // border: 1px solid gray;
         border-radius: 5%;
         padding: 10px 10px;
         margin-right: 5px;
         margin-bottom: 5px;
-        h5 {
-            border-bottom: 1px solid gray;
+        span {
+            display: inline-block;
+            font-size: 2em;
+            margin-right: 35px;
+            margin-left: 35px;
+            .devicon-vuejs-plain {
+                background-color: black;
+                padding: 5px 5px 0 5px;
+                border-radius: 5px;
+                display: inline-block;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    #table-content {
+        .col-sm-12 {
+            span {
+                margin-right: 15px;
+                margin-left: 0;
+            }
         }
     }
 }

@@ -9,6 +9,7 @@
     justify-content: center;
     display: flex;
     .portfolio-item {
+        min-height: 300px;
         box-shadow: -2px 2px 11px 2px #22c0e8;
         border: 1px solid #22c0e8;
         border-radius: 2%;
