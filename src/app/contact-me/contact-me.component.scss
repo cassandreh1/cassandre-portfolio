@@ -9,8 +9,8 @@
             color: red;
         }
          #contact-me-icon {
-            margin-top: -60px !important;
-            height: 14em;
+            margin-top: -54px !important;
+            height: 12em;
             animation: slideLeft 2s ease-in-out forwards;
         }
     }    
@@ -41,7 +41,7 @@
         }
     }
     #contact-info {
-       padding-top: 10px; 
+       padding-top: 15px; 
     }
     .contact-icon-styling {
         font-size: 30px;
@@ -59,11 +59,11 @@
         transform: translateX(0px);
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         .wall-art {
             #contact-me-icon {
-                height: 11em;
-                margin-top: -55px !important;
+                height: 8em;
+                margin-top: -46px !important;
             }
         }
     }  
