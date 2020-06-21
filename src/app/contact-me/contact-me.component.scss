@@ -5,20 +5,15 @@
     background-image: linear-gradient(to bottom, #e6f3f3, #b3d8d8);
     .wall-art {
         text-align: center;
-        img {
-            height: 15em;
+        #resume-pdf {
+            color: red;
+        }
+         #contact-me-icon {
+            margin-top: -60px !important;
+            height: 14em;
             animation: slideLeft 2s ease-in-out forwards;
         }
-    }
-    @keyframes slideLeft{
-        0% {
-        transform: translateX(-100px);
-        }
-        100% {
-        transform: translateX(0px);
-        }
-    }
-    
+    }    
     .col-md-6 {
         padding: 20px;
         .ng-dirty.ng-invalid:not(form)  {
@@ -44,10 +39,32 @@
                 opacity: 0.5;
             }
         }
-    } 
- @media screen and (max-width: 767px) {
-    .wall-art {
-        display: none;
     }
- }  
+    #contact-info {
+       padding-top: 10px; 
+    }
+    .contact-icon-styling {
+        font-size: 30px;
+        margin-right: 8px;
+        text-decoration: none;
+        svg {
+            margin-bottom: 8px;
+        }
+    }
+    @keyframes slideLeft{
+        0% {
+        transform: translateX(-100px);
+        }
+        100% {
+        transform: translateX(0px);
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .wall-art {
+            #contact-me-icon {
+                height: 11em;
+                margin-top: -55px !important;
+            }
+        }
+    }  
 }

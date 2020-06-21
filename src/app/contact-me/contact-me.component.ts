@@ -4,6 +4,7 @@ import { NgModel } from '@angular/forms';
 import { HttpClient, HttpParams, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { from } from 'rxjs';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact-me',
@@ -11,7 +12,7 @@ import { from } from 'rxjs';
   styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent implements OnInit {
-
+  faFilePdf = faFilePdf;
   model = new ContactMeInfo('', '', '', '');
   showErrMsg: Boolean = false;
   showSuccessMsg: Boolean = false;

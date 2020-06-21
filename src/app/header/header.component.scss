@@ -35,14 +35,15 @@
         height: 3rem;
         width: 3rem;
         color: #ff65bd;
-        -webkit-animation: mover 1s infinite  alternate;
-        animation: mover 1s infinite  alternate;
+        -webkit-animation: moverY 1s infinite  alternate;
+        animation: moverY 1s infinite  alternate;
       }
-      @-webkit-keyframes mover {
+
+      @-webkit-keyframes moverY {
           0% { transform: translateY(0); }
           100% { transform: translateY(-10px); }
       }
-      @keyframes mover {
+      @keyframes moverY {
           0% { transform: translateY(0); }
           100% { transform: translateY(-10px); }
       }
