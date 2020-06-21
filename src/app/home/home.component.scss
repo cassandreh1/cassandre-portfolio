@@ -36,6 +36,16 @@
 
     }
 }
+#checkResume {
+  background-color: #e6f3f3;
+  text-align: center;
+  a {
+    // color: #ff65bd;
+    font-weight: bold;
+    // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 0.8rem #ff65bd;
+  }
+
+}
   @keyframes slideLeft {
     0% {
       width: 0%;
