@@ -55,6 +55,9 @@ ul.timeline {
     h5 {
         margin: 0;
         padding-top: 15px;
+        &:first-child {
+            padding-top: 0;
+        }
         &:before {
             content: ' ';
             background: white;

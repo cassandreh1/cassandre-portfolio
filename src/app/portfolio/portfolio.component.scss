@@ -45,13 +45,16 @@
         color: white;
         background-color: #28a2c1;;
         border-color: #28a2c1;
-        margin-right: 15px;
+        // margin-right: 15px;
         margin-bottom: 15px;
         &:hover {
             color: #28a2c1;
             background-color: white;
             border-color: #28a2c1;
         }
+    }
+    .margin-right-8 {
+        margin-right: 8px;
     }
     @media screen and (max-width: 991px) {
         .portfolio-item {
@@ -60,6 +63,11 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+    @media screen and (min-width: 992px){
+        #portfolio-wrapper .portfolio-item {
+            min-height: 325px;
         }
     }
 }
