@@ -12,14 +12,20 @@
     <div class="row no-gutters">
       <div class="col-sm-12">
         <h5 class="margin-bottom-20">Technologies</h5>
-        <span *ngFor="let tech of technologies"> 
-          <i [ngClass]="tech"></i>
-        </span>
+        <span *ngFor="let tech of technologies" >
+          <div class="custom-tooltip">
+            <i [ngClass]="tech.icon"></i>
+            <span class="tooltiptext">{{ tech.text }}</span>
+          </div>
+          </span>
       </div>
       <div class="col-sm-12">
         <h5 class="margin-bottom-20">Tools</h5>
         <span *ngFor="let tool of developmentTools"> 
-          <i [ngClass]="tool"></i>
+          <div class="custom-tooltip">
+            <i [ngClass]="tool.icon"></i>
+            <span class="tooltiptext">{{ tool.text }}</span>
+          </div>
         </span>
       </div>
       <div class="col-sm-12">
