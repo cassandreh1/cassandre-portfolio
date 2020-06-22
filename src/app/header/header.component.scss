@@ -2,6 +2,11 @@
   box-shadow: -2px 2px 20px 5px #22c0e8;
   font-family: "Courier New";
   color: #22c0e8;
+  img {
+    height: 2.3rem;
+    width: 2.3rem;
+    border-radius: 15px;
+  }
 }
 .hero-section {
     height: 450px;
@@ -220,6 +225,9 @@
       }
     }
     @media screen and (max-width: 767px) {
+      .navbar-brand {
+         margin-right: 0;
+      }
       .hero-section {
         height: 475px;
         .title-section {
