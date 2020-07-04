@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { faHome, faFile, faGripHorizontal, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -11,21 +11,13 @@ export class HeaderComponent implements OnInit {
   faFile = faFile;
   faAngleDown = faAngleDown;
   faGripHorizontal = faGripHorizontal;
-  @ViewChild('stickyMenu')  menuElement: ElementRef;
-  menuPosition:any;
   ngOnInit() {
   }
-  ngAfterViewInit(){
-    // this.menuPosition = this.menuElement.nativeElement.offsetTop
-  }
-  async onMenuClick(){
-    // const windowScroll = window.pageYOffset;
-    // if(windowScroll >= this.menuPosition){
-    //     await this.menuElement.nativeElement.lastElementChild.classList.remove('show')
-    //     window.scroll({top: 0, behavior: 'smooth' });
-    //     console.log('windwScroll greater')
-    // } else {
-    //   console.log('windwScroll less than')
-    // }
+  @HostListener('window:scroll', [])
+  handleScroll() {
+    const navbar = document.getElementById('navbarSupportedContent');
+    if (navbar.classList.contains('show')) {
+      navbar.classList.remove('show');
+    }
   }
 }

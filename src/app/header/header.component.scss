@@ -1,6 +1,7 @@
 .navbar {
   box-shadow: -2px 2px 20px 5px #22c0e8;
   font-family: "Courier New";
+  // font-family: 'Clip', Arial, sans-serif;
   color: #22c0e8;
   img {
     height: 2.3rem;
@@ -13,14 +14,14 @@
     text-align: center;
     background-color: black;
       .title-section {
-        h3 {
+        h4 {
             color: white;
             text-shadow: none;
             margin-bottom: 40px;
         }
         position: relative;
         top: 35%;
-        font-family: "Courier New";
+        font-family: 'Clip', Arial, sans-serif;
         text-transform: uppercase;
         font-size: 4em;
         color: #ffe6ff;
