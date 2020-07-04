@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { faHome, faFile, faGripHorizontal, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faFile, faGripHorizontal, faAngleDown, faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   faFile = faFile;
   faAngleDown = faAngleDown;
   faGripHorizontal = faGripHorizontal;
+  faBars = faBars;
   ngOnInit() {
   }
   @HostListener('window:scroll', [])

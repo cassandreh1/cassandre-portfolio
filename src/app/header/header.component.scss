@@ -1,12 +1,25 @@
 .navbar {
-  box-shadow: -2px 2px 20px 5px #22c0e8;
+  box-shadow: -2px 2px 10px -2px black;
   font-family: "Courier New";
-  // font-family: 'Clip', Arial, sans-serif;
-  color: #22c0e8;
+  font-family: 'Clip', Arial, sans-serif;
+  background-color: black;
+  a {
+    color: #ff65bd;
+    &.nav-link.active,
+    &:hover {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd,  0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+
+    }
+  }
   img {
     height: 2.3rem;
     width: 2.3rem;
     border-radius: 15px;
+  }
+  button {
+    color:  #ff65bd !important;
   }
 }
 .hero-section {
