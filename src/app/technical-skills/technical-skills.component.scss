@@ -1,8 +1,13 @@
 
 #skills-wrapper {
-    // background-image: linear-gradient(to bottom, #e6f3f3, #b3d8d8);
     padding-top: 10px;
     padding-bottom: 20px;
+    h5 {
+        color: #22c0e8;
+    }
+    .white-text {
+        color: white
+    }
 }
 .sub-title {
     // color: #22c0e8;
@@ -31,11 +36,8 @@ hr {
             i {
                 font-size: 2em;
             }
-            .devicon-vuejs-plain {
-                background-color: black;
-                padding: 5px 5px 0 5px;
-                border-radius: 5px;
-                display: inline-block;
+            .devicon-bitbucket-plain {
+                color: #007acc;
             }
         }
         .tooltiptext {

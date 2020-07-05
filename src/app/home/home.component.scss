@@ -3,9 +3,8 @@
   // padding-right: 15px;
 }
 .content-stye {
-    color: slategray;
+    color: white;
     padding: 0;
-    // background-image: linear-gradient(to bottom, white, #e6f3f3);
     .content-container {
         p {
           margin-bottom: 10px;
@@ -28,6 +27,7 @@
         img {
             width: 100%;
             box-shadow: -2px 2px 20px 7px #22c0e8;
+            border-radius: 20px;
         }
     }
     hr {
@@ -37,12 +37,16 @@
     }
 }
 #checkResume {
-  background-color: #e6f3f3;
+  .alert-primary {
+    color: #22c0e8;
+    background-color: transparent;
+    border-color: #22c0e8;
+    }
+  // background-color: #e6f3f3;
   text-align: center;
   a {
-    // color: #ff65bd;
+    color: #22c0e8;
     font-weight: bold;
-    // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 0.8rem #ff65bd;
   }
 
 }

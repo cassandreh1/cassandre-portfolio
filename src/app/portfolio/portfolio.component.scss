@@ -1,6 +1,6 @@
 .portfolio-container {
     min-height: 350px;
-    background-image: linear-gradient(to bottom, white, #e6f3f3);
+    // background-image: linear-gradient(to bottom, white, #e6f3f3);
 }
 #portfolio-wrapper {
     margin: 0 !important;
@@ -27,10 +27,13 @@
             box-shadow: none;
             border: none;
             .btn {
-                color: #28a2c1;
+                color: #22c0e8;
                 background-color: white;
-                border-color: #28a2c1;
+                border-color: #22c0e8;
             }
+        }
+        p {
+            color: white;
         }
         img {
             width: 3.5rem;
@@ -43,14 +46,14 @@
     }
     .btn {
         color: white;
-        background-color: #28a2c1;;
-        border-color: #28a2c1;
+        background-color: #22c0e8;
+        border-color: #22c0e8;
         // margin-right: 15px;
         margin-bottom: 15px;
         &:hover {
-            color: #28a2c1;
+            color: #22c0e8;
             background-color: white;
-            border-color: #28a2c1;
+            border-color: #22c0e8;
         }
     }
     .margin-right-8 {

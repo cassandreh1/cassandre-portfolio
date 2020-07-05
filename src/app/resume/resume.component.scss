@@ -5,6 +5,10 @@
 hr {
     border-color: #22c0e8;
 }
+.date-range,
+h5 {
+    color: #22c0e8;
+}
 #resume-pdf {
     h5 {
         display: inline-block;
@@ -17,8 +21,12 @@ hr {
     }
 }
 #eduction-styling {
-    // background-image: linear-gradient(to bottom, white, #e6f3f3);
-    // background-color: #f2f2f2;
+    color: white;
+    .btn-danger {
+        background-color: #ff65bd;
+        border: 1px solid #ff65bd;
+        
+    }
     .bi-book-half {
         padding-top: 0;
     }
@@ -33,18 +41,19 @@ hr {
     }
 }
 #work-history {
-    // background-color: #e6f3f3;
-    background-image: linear-gradient(to bottom, white, #e6f3f3);
+    color: white;
+    // background-image: linear-gradient(to bottom, white, #e6f3f3);
 }
 ul.timeline {
     list-style-type: circle;
     margin-left: 10px;
+    padding-bottom: 1rem;
     &:last-child {
         margin-bottom: 0;
     }
     &:before {
         content: ' ';
-        background: #d4d9df;
+        background: #22c0e8;
         display: inline-block;
         position: absolute;
         left: 28px;

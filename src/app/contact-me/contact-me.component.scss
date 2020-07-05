@@ -1,12 +1,11 @@
 .row#contact-me-wrapper {
   padding-top: 20px;
   padding-bottom: 40px;
-  // background-color: #d4e4e4;
-  background-image: linear-gradient(to bottom, #e6f3f3, #b3d8d8);
+  // background-image: linear-gradient(to bottom, #e6f3f3, #b3d8d8);
   .wall-art {
     text-align: center;
     #resume-pdf {
-      color: red;
+      color: #ff65bd;
     }
     #contact-me-icon {
       margin-top: -54px !important;
@@ -14,10 +13,26 @@
       animation: slideLeft 2s ease-in-out forwards;
     }
   }
+  .white-color {
+    color: white;
+  }
   .col-md-6 {
     padding: 20px;
+    textarea,
+    input {
+      background-color: black;
+      border: 1px solid #28a2c1;
+      color: white;
+      &::placeholder {
+        color: white;
+      }
+      &:focus {
+        box-shadow: -2px 2px 11px 2px #22c0e8;
+      }
+    }
     .ng-dirty.ng-invalid:not(form) {
       border: 1px solid #a94442;
+      box-shadow: none;
     }
     .error-message {
       padding-top: 10px;
@@ -33,11 +48,8 @@
     }
     button.btn-success {
       margin-top: 40px;
-      background-color: #28a2c1;
-      border-color: #28a2c1;
-      &:hover {
-        opacity: 0.5;
-      }
+      background-color: #22c0e8;
+      border-color: #22c0e8;
     }
     .bi-geo-alt {
       margin-bottom: 4px;
@@ -45,6 +57,7 @@
   }
   #contact-info {
     padding-top: 15px;
+    color: white;
   }
   .contact-icon-styling {
     font-size: 30px;

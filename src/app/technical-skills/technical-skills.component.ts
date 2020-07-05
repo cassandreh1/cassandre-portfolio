@@ -15,7 +15,7 @@ export class TechnicalSkillsComponent implements OnInit {
     text:'JavaScript',
   },
   {
-    icon: 'devicon-vuejs-plain colored',
+    icon: 'devicon-vuejs-plain-wordmark',
     text:'Vue.js',
   },
   {
@@ -58,7 +58,7 @@ export class TechnicalSkillsComponent implements OnInit {
     text:'Visual Studio Code',
   },
   {
-    icon: 'devicon-atom-original colored',
+    icon: 'devicon-atom-original',
     text:'Atom',
   },
   {
@@ -66,11 +66,11 @@ export class TechnicalSkillsComponent implements OnInit {
     text:'Git',
   },
   {
-    icon: 'devicon-github-plain colored',
+    icon: 'devicon-github-plain',
     text:'GitHub',
   },
   {
-    icon: 'devicon-bitbucket-plain colored',
+    icon: 'devicon-bitbucket-plain',
     text:'BitBucket',
   },
  ];
