@@ -23,9 +23,16 @@
   }
 }
 .hero-section {
-    height: 450px;
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px),
+      linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+    height: 550px;
     text-align: center;
-    background-color: black;
+    // background-color: black;
       .title-section {
         h4 {
             color: white;
@@ -243,7 +250,7 @@
          margin-right: 0;
       }
       .hero-section {
-        height: 475px;
+        // height: 475px;
         .title-section {
           top: 25%;
         }
