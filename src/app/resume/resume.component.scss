@@ -96,3 +96,9 @@ ul.timeline {
 .padding-top-0 {
     padding-top: 0;
 }
+
+@media screen and (min-width: 992px) {
+    #work-history {
+        margin: 0 10rem;
+    }
+}
