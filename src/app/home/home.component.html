@@ -1,3 +1,22 @@
+
+<app-portfolio></app-portfolio>
+<app-technical-skills 
+  [bgColor]="{'background-image': 'linear-gradient(to bottom, #e6f3f3,  #e6f3f3)'}" 
+  [hrColor]="{'border-color': '#ff65bd'}"
+  [titleColor]="{'color': '#ff65bd'}">
+</app-technical-skills>
+<div class="row" id="checkResume">
+  <div class="col-sm-12">
+    <div class="alert alert-primary" role="alert">
+      <a href="javascript:void(0)" routerLink="/resume"> 
+        <svg class="bi bi-cursor-fill" width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+        </svg>
+        CLICK HERE FOR MY RESUME!
+      </a>
+    </div>
+  </div>
+</div>
 <div class="row no-gutters content-stye" id="about-me-wrapper">
   <div class="col-sm-12" id="about-me-title">
     <h3 class="title sub-title">
@@ -33,23 +52,5 @@
     <img src="../../assets/head-shot-sitting-5.jpg" alt="">
   </div>
 
-</div>
-<app-portfolio></app-portfolio>
-<app-technical-skills 
-  [bgColor]="{'background-image': 'linear-gradient(to bottom, #e6f3f3,  #e6f3f3)'}" 
-  [hrColor]="{'border-color': '#ff65bd'}"
-  [titleColor]="{'color': '#ff65bd'}">
-</app-technical-skills>
-<div class="row" id="checkResume">
-  <div class="col-sm-12">
-    <div class="alert alert-primary" role="alert">
-      <a href="javascript:void(0)" routerLink="/resume"> 
-        <svg class="bi bi-cursor-fill" width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
-        </svg>
-        CLICK HERE FOR MY RESUME!
-      </a>
-    </div>
-  </div>
 </div>
 <app-contact-me></app-contact-me>
